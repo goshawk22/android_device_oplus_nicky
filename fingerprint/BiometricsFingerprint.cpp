@@ -37,7 +37,7 @@ namespace implementation {
 
 BiometricsFingerprint::BiometricsFingerprint() {
     for(int i=0; i<10; i++) {
-        mOplusBiometricsFingerprint = vendor::oplus::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprint::tryGetService();
+        mOplusBiometricsFingerprint = vendor::oplus::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprint::getService();
         if(mOplusBiometricsFingerprint != nullptr) break;
         sleep(10);
     }
