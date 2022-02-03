@@ -14,3 +14,5 @@ vendor.oplus.hardware.ims::IOplusImsRadio         u:object_r:hal_telephony_hwser
 vendor.oplus.hardware.radio::IOplusRadio          u:object_r:hal_telephony_hwservice:s0
 
 vendor.qti.hardware.embmssl::IEmbms                                           u:object_r:hal_embmssl_hwservice:s0
+
+vendor.qti.memory.pasrmanager::IPasrManager                                   u:object_r:hal_pasrmanager_memory_hwservice:s0
