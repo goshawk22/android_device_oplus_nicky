@@ -1,3 +1,5 @@
+/vendor/bin/hw/vendor\.qti\.memory\.pasrmanager\@1\.0-service                                           u:object_r:hal_pasrmanager_memory_qti_exec:s0
+
 # Camera
 /mnt/vendor/persist/camera(/.*)?                       u:object_r:vendor_persist_camera_file:s0
 /mnt/vendor/persist/dual_camera_calibration(/.*)?      u:object_r:vendor_persist_camera_file:s0
