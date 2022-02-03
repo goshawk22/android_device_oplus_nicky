@@ -34,3 +34,6 @@ vendor.gsm.serial              u:object_r:vendor_nw_exported_system_prop:s0
 # PASR
 vendor.pasr.                             u:object_r:vendor_pasr_prop:s0
 ro.vendor.pasr.                          u:object_r:vendor_pasr_prop:s0
+
+# Qspmhal
+ro.vendor.qspm.enable                    u:object_r:vendor_qspm_prop:s0

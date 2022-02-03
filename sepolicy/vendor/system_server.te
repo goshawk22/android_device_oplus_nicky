@@ -2,3 +2,6 @@ rw_dir_file(system_server, vendor_proc_tri_state_key)
 allow system_server hal_power_default:binder call;
 allow system_server sysfs:file { read open };
 allow system_server vendor_unification_prop:file { read open getattr };
+
+# Allow system_server to access Qspmhal
+get_prop(system_server, vendor_qspm_prop)
