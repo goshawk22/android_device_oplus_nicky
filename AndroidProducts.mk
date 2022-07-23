@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_nicky.mk
+    $(LOCAL_DIR)/aosp_nicky.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_nicky-user \
-    lineage_nicky-userdebug \
-    lineage_nicky-eng
+    aosp_nicky-user \
+    aosp_nicky-userdebug \
+    aosp_nicky-eng
