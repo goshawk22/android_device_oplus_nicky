@@ -24,16 +24,19 @@ if [ ! -f "${HELPER}" ]; then
 fi
 source "${HELPER}"
 
-# Default to sanitizing the vendor folder before extraction
-CLEAN_VENDOR=true
+# Default to not sanitizing the vendor folder before extraction
+CLEAN_VENDOR=false
+
+# Proprietary files list
+DEVICE_NAME="Common"
 
 KANG=
 SECTION=
 
 while [ "${#}" -gt 0 ]; do
     case "${1}" in
-        -n | --no-cleanup )
-                CLEAN_VENDOR=false
+        -c | --cleanup )
+                CLEAN_VENDOR=true
                 ;;
         -k | --kang )
                 KANG="--kang"
@@ -41,6 +44,9 @@ while [ "${#}" -gt 0 ]; do
         -s | --section )
                 SECTION="${2}"; shift
                 CLEAN_VENDOR=false
+                ;;
+        -d | --device )
+                DEVICE_NAME="${2}"; shift
                 ;;
         * )
                 SRC="${1}"
@@ -61,6 +67,14 @@ function blob_fixup() {
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 
-extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
+if [ "${DEVICE_NAME}" = "Common" ]; then
+    extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
+elif [ "${DEVICE_NAME}" = "3 Pro" ]; then
+    extract "${MY_DIR}/proprietary-files-3-Pro.txt" "${SRC}" "${KANG}" --section "${SECTION}"
+elif [ "${DEVICE_NAME}" = "X" ]; then
+    extract "${MY_DIR}/proprietary-files-X.txt" "${SRC}" "${KANG}" --section "${SECTION}"
+elif [ "${DEVICE_NAME}" = "XT" ]; then
+    extract "${MY_DIR}/proprietary-files-XT.txt" "${SRC}" "${KANG}" --section "${SECTION}"
+fi
 
 "${MY_DIR}/setup-makefiles.sh"

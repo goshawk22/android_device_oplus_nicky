@@ -31,6 +31,9 @@ setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}"
 write_headers
 
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
+write_makefiles "${MY_DIR}/proprietary-files-3-Pro.txt" true
+write_makefiles "${MY_DIR}/proprietary-files-X.txt" true
+write_makefiles "${MY_DIR}/proprietary-files-XT.txt" true
 
 # Finish
 write_footers
