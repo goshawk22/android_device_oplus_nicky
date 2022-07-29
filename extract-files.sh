@@ -75,6 +75,8 @@ elif [ "${DEVICE_NAME}" = "X" ]; then
     extract "${MY_DIR}/proprietary-files-X.txt" "${SRC}" "${KANG}" --section "${SECTION}"
 elif [ "${DEVICE_NAME}" = "XT" ]; then
     extract "${MY_DIR}/proprietary-files-XT.txt" "${SRC}" "${KANG}" --section "${SECTION}"
+elif [ "${DEVICE_NAME}" = "PNX" ]; then
+    extract "${MY_DIR}/proprietary-files-PNX.txt" "${SRC}" "${KANG}" --section "${SECTION}"
 fi
 
 "${MY_DIR}/setup-makefiles.sh"

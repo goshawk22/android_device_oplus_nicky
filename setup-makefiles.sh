@@ -34,6 +34,7 @@ write_makefiles "${MY_DIR}/proprietary-files.txt" true
 write_makefiles "${MY_DIR}/proprietary-files-3-Pro.txt" true
 write_makefiles "${MY_DIR}/proprietary-files-X.txt" true
 write_makefiles "${MY_DIR}/proprietary-files-XT.txt" true
+write_makefiles "${MY_DIR}/proprietary-files-PNX.txt" true
 
 # Finish
 write_footers
