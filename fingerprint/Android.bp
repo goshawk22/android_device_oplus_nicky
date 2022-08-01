@@ -1,8 +1,8 @@
 cc_binary {
-    name: "android.hardware.biometrics.fingerprint@2.1-service.nicky",
+    name: "android.hardware.biometrics.fingerprint@2.3-service.nicky",
     defaults: ["hidl_defaults"],
-    init_rc: ["android.hardware.biometrics.fingerprint@2.1-service.nicky.rc"],
-    vintf_fragments: ["android.hardware.biometrics.fingerprint@2.1-service.nicky.xml"],
+    init_rc: ["android.hardware.biometrics.fingerprint@2.3-service.nicky.rc"],
+    vintf_fragments: ["android.hardware.biometrics.fingerprint@2.3-service.nicky.xml"],
     relative_install_path: "hw",
     srcs: [
         "BiometricsFingerprint.cpp",
@@ -19,6 +19,8 @@ cc_binary {
         "libutils",
         "libbase",
         "android.hardware.biometrics.fingerprint@2.1",
+        "android.hardware.biometrics.fingerprint@2.2",
+        "android.hardware.biometrics.fingerprint@2.3",
         "vendor.oplus.hardware.biometrics.fingerprint@2.1",
     ],
     vendor: true
