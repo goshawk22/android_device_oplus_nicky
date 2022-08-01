@@ -16,6 +16,7 @@
 #define LOG_TAG "android.hardware.biometrics.fingerprint@2.3-service.nicky"
 #define LOG_VERBOSE "android.hardware.biometrics.fingerprint@2.3-service.nicky"
 
+#include <android-base/properties.h>
 #include <hardware/hardware.h>
 #include <hardware/fingerprint.h>
 #include "BiometricsFingerprint.h"
@@ -24,6 +25,8 @@
 #include <unistd.h>
 #include <utils/Log.h>
 #include <thread>
+
+using android::base::GetProperty;
 
 namespace android {
 namespace hardware {
@@ -41,6 +44,10 @@ BiometricsFingerprint::BiometricsFingerprint() {
     if(mOplusBiometricsFingerprint == nullptr) exit(0);
 }
 
+static bool isFOD() {
+  // Check if ro.vendor.fp_type is set to "optical". If so, then we are in FOD mode.
+    return GetProperty("ro.vendor.fp_type", "") == "optical";
+}
 static bool receivedCancel;
 static bool receivedEnumerate;
 static uint64_t myDeviceId;
@@ -260,7 +267,7 @@ Return<RequestStatus> BiometricsFingerprint::authenticate(uint64_t operationId, 
 }
 
 Return<bool> BiometricsFingerprint::isUdfps(uint32_t /*sensorId*/) {
-    return false;
+    return isFOD();
 }
 
 Return<void> BiometricsFingerprint::onFingerDown(uint32_t /*x*/, uint32_t /*y*/, float /*minor*/,
