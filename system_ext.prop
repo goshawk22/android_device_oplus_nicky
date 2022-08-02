@@ -20,6 +20,9 @@ ro.vendor.use_data_netmgrd=true
 # DPM
 persist.vendor.dpm.feature=11
 
+# Fingerprint
+fingerprint.nocleanup=true
+
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
 
