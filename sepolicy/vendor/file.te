@@ -19,6 +19,7 @@ type vendor_persist_engineer_file, file_type;
 type vendor_proc_engineer, fs_type, proc_type;
 
 # Fingerprint
+type sysfs_hal_fingerprint_default, fs_type, sysfs_type;
 type vendor_proc_fingerprint, fs_type, proc_type;
 
 # Sensors
