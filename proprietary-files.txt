@@ -614,17 +614,6 @@ vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/vendor.oplus.hardware.commondcs@1.0.so
 odm/lib64/vendor.oplus.hardware.biometrics.fingerprintservice@1.0.so
 
-# Fingerprint (Firmware)
-odm/vendor/firmware/a_fp.b06
-odm/vendor/firmware/a_fp.b04
-odm/vendor/firmware/a_fp.b00
-odm/vendor/firmware/a_fp.b03
-odm/vendor/firmware/a_fp.b07
-odm/vendor/firmware/a_fp.mdt
-odm/vendor/firmware/a_fp.b05
-odm/vendor/firmware/a_fp.b02
-odm/vendor/firmware/a_fp.b01
-
 # Graphics (Adreno)
 vendor/lib/egl/eglSubDriverAndroid.so
 vendor/lib/egl/libEGL_adreno.so

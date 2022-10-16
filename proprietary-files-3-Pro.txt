@@ -50,3 +50,14 @@ vendor/lib64/libarcsoft_hdrplus_hvx_stub.so:vendor/18621/lib64/libarcsoft_hdrplu
 vendor/lib64/libarcsoft_high_dynamic_range.so:vendor/18621/lib64/libarcsoft_high_dynamic_range.so|ac763607373db230248bde2f23d889d32d9240cd
 vendor/lib64/libarcsoft_low_light_hdr.so:vendor/18621/lib64/libarcsoft_low_light_hdr.so|0a6325987c6a5f407e1de1c99410e2a97021cf50
 vendor/lib64/libarcsoft_super_night_raw.so:vendor/18621/lib64/libarcsoft_super_night_raw.so|c8927ff21da2ff361dbddc84a89cab7d20d24fed
+
+# Fingerprint (Firmware) - from Realme 3 Pro
+odm/vendor/firmware/a_fp.b06
+odm/vendor/firmware/a_fp.b04
+odm/vendor/firmware/a_fp.b00
+odm/vendor/firmware/a_fp.b03
+odm/vendor/firmware/a_fp.b07
+odm/vendor/firmware/a_fp.mdt
+odm/vendor/firmware/a_fp.b05
+odm/vendor/firmware/a_fp.b02
+odm/vendor/firmware/a_fp.b01
