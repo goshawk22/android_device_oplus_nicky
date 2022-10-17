@@ -2,7 +2,6 @@
 audio.sys.noisy.broadcast.delay=500
 audio.sys.mute.latency.factor=2
 audio.sys.routing.latency=0
-audio.offload.min.duration.secs=30
 audio.sys.offload.pstimeout.secs=3
 ro.af.client_heap_size_kbyte=7168
 
@@ -27,11 +26,7 @@ fingerprint.nocleanup=true
 ro.vendor.qti.va_aosp.support=1
 
 # Graphics
-debug.sf.enable_hwc_vds=1
 debug.sf.latch_unsignaled=1
-
-# Media
-media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
 # RCS
 persist.rcs.supported=0
