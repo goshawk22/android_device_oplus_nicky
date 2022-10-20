@@ -252,10 +252,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light-service.nicky
 
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.1-service.nicky
-
 # Media
 PRODUCT_PACKAGES += \
     libavservices_minijail \
