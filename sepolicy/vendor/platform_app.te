@@ -1,2 +1,4 @@
 allow platform_app rild:binder { call transfer };
 allow platform_app zygote:unix_stream_socket getopt;
+allow platform_app unlabeled:file { read };
+allow platform_app vendor_display_notch_prop:file { read open getattr };
