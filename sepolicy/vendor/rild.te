@@ -10,3 +10,7 @@ allow rild platform_app:binder call;
 allow rild proc:file { open read };
 allow rild block_device:dir { search };
 allow rild proc_devinfo:dir { search };
+allow rild cache_file:dir { getattr search write };
+allow rild default_prop:file { read open };
+allow rild default_prop:property_service set;
+allow rild cache_file:file { getattr write };

@@ -1,0 +1,2 @@
+allow network_stack fs_bpf:file { read write };
+allow network_stack unlabeled:file { read };

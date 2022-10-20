@@ -2,3 +2,6 @@ allow wcnss_service init:unix_stream_socket connectto;
 allow wcnss_service kmsg_device:chr_file { open write };
 allow wcnss_service property_socket:sock_file write;
 allow wcnss_service vendor_shell_exec:file execute_no_trans;
+allow wcnss_service mnt_vendor_file:file { read };
+allow wcnss_service vendor_default_prop:property_service { set };
+allow wcnss_service mnt_vendor_file:file { open getattr };

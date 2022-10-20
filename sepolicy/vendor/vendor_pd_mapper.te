@@ -1,0 +1,3 @@
+allow vendor_pd_mapper kmsg_device:chr_file { getattr };
+allow vendor_pd_mapper property_socket:sock_file { write };
+allow vendor_pd_mapper init:unix_stream_socket connectto;

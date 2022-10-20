@@ -1,0 +1,2 @@
+allow hal_wifi_default persist_vendor_debug_wifi_prop:file { read open getattr };
+allow hal_wifi_default vendor_default_prop:property_service set;
