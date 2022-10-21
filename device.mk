@@ -316,6 +316,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     media-legacy \
     perf \
     usb \
+    vibrator \
     wfd
 
 # Recovery
@@ -355,13 +356,6 @@ PRODUCT_PACKAGES += \
 # Trust
 PRODUCT_PACKAGES += \
     vendor.lineage.trust@1.0-service
-
-# Vibrator
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service \
-
-PRODUCT_COPY_FILES += \
-    vendor/qcom/opensource/vibrator/excluded-input-devices.xml:vendor/etc/excluded-input-devices.xml
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
