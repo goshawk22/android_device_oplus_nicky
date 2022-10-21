@@ -459,4 +459,7 @@
      <!-- Whether to cleanup fingerprints upon connection to the daemon and when user switches -->
      <bool name="config_cleanupUnusedFingerprints">false</bool>
 
+    <!-- Fingerprint from stock ROM -->
+    <string name="config_stockFingerprint" translatable="false">Realme/RMX1851/RMX1851:11/RKQ1.201217.002/1645426024988:user/release-keys</string>
+
 </resources>
