@@ -93,6 +93,9 @@ PRODUCT_PACKAGES += \
     libtinymix \
     libvolumelistener
 
+PRODUCT_PACKAGES += \
+    libldacBT_bco
+
 # Audio configs
 AUDIO_HAL_DIR := hardware/qcom-caf/sm8350/audio
 
