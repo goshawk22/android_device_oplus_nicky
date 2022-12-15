@@ -161,5 +161,11 @@ ro.surface_flinger.wcg_composition_dataspace=143261696
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 
 # USB
+vendor.usb.use_gadget_hal=0
+vendor.usb.rndis.func.name=gsi
+vendor.usb.rmnet.func.name=gsi
+vendor.usb.rmnet.inst.name=rmnet
+vendor.usb.dpl.inst.name=dpl
+vendor.usb.qdss.inst.name=qdss_mdm
 vendor.usb.diag.func.name=diag
 vendor.usb.use_ffs_mtp=0
