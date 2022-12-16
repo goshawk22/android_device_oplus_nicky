@@ -5,3 +5,6 @@ allow system_server vendor_unification_prop:file { read open getattr };
 
 # Allow system_server to access Qspmhal
 get_prop(system_server, vendor_qspm_prop)
+
+
+allow system_server sysfs:file getattr;
