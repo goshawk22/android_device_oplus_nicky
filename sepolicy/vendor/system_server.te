@@ -1,7 +1,10 @@
 rw_dir_file(system_server, vendor_proc_tri_state_key)
 allow system_server hal_power_default:binder call;
-allow system_server sysfs:file { read open };
+allow system_server sysfs:file { read open getattr };
 allow system_server vendor_unification_prop:file { read open getattr };
 
 # Allow system_server to access Qspmhal
 get_prop(system_server, vendor_qspm_prop)
+
+allow system_server default_android_service:service_manager add;
+allow system_server vendor_display_notch_prop:file read;

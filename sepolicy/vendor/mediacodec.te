@@ -1,1 +1,1 @@
-allow mediacodec vendor_audio_prop:file { read open };
+allow mediacodec vendor_audio_prop:file { read open getattr };

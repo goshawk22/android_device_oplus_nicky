@@ -1,1 +1,1 @@
-allow lmkd vendor_default_prop:file { read open };
+allow lmkd vendor_default_prop:file { read open getattr };
