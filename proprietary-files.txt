@@ -429,11 +429,7 @@ vendor/lib64/libsdsprpc.so
 vendor/lib64/libsysmon_cdsp_skel.so
 
 # Charger (Firmware)
-odm/firmware/fastchg/18041/oplus_vooc_fw.bin
-odm/firmware/fastchg/18041/oplus_vooc_fw_n76e.bin
-odm/firmware/fastchg/18097/oplus_vooc_fw.bin
 odm/firmware/fastchg/18621/oplus_vooc_fw.bin
-odm/firmware/fastchg/19651/oplus_vooc_fw.bin
 odm/firmware/fastchg/19691/oplus_vooc_fw.bin
 odm/firmware/fastchg/19691/oplus_vooc_fw_n76e.bin
 
@@ -1189,14 +1185,8 @@ vendor/etc/init/init_thermal-engine.rc
 -vendor/lib64/libthermalclient.so
 
 # Touchpanel (Firmware)
-odm/firmware/tp/18041/FW_S3706_SAMSUNG.img
-odm/firmware/tp/18041/FW_S3706_SAMSUNG_FAE.img
-odm/firmware/tp/18041/LIMIT_S3706_SAMSUNG.img
 odm/firmware/tp/18621/FW_OPPO_TP_NOFLASH_DSJM.img
 odm/firmware/tp/18621/FW_OPPO_TP_NOFLASH_DSJM_TEST.img
-odm/firmware/tp/19651/FW_S3706_SAMSUNG.img
-odm/firmware/tp/19651/FW_S3706_SAMSUNG_FAE.img
-odm/firmware/tp/19651/LIMIT_S3706_SAMSUNG.img
 odm/firmware/tp/19691/FW_OPPO_TP_NOFLASH_DSJM.img
 odm/firmware/tp/19691/FW_OPPO_TP_NOFLASH_DSJM_FAE.img
 odm/firmware/tp/19691/FW_OPPO_TP_NOFLASH_DSJM_TEST.img
