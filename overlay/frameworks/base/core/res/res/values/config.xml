@@ -459,9 +459,6 @@
      <!-- Whether to cleanup fingerprints upon connection to the daemon and when user switches -->
      <bool name="config_cleanupUnusedFingerprints">false</bool>
 
-    <!-- Fingerprint from stock ROM -->
-    <string name="config_stockFingerprint" translatable="false">Realme/RMX1851/RMX1851:11/RKQ1.201217.002/1645426024988:user/release-keys</string>
-
      <!-- The bounding path of the cutout region of the main built-in display.
          Must either be empty if there is no cutout region, or a string that is parsable by
          {@link android.util.PathParser}.
