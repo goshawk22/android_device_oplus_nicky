@@ -1,0 +1,3 @@
+on post-fs-data && property:ro.boot.prj_version=18621 
+    mount overlay overlay /vendor/lib lowerdir=/vendor/18621/lib:/vendor/lib
+    mount overlay overlay /vendor/lib64 lowerdir=/vendor/18621/lib64:/vendor/lib64
