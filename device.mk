@@ -282,10 +282,8 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay/packages/apps/CarrierConfig
 
 PRODUCT_PACKAGES += \
-    FrameworksResTarget_oled \
-    FrameworksResTarget_RMX1971 \
-    SystemUIResTarget_oled \
-    SystemUIResTarget_lcd
+    FrameworksResTarget \
+    SystemUIResTarget
 
 # Power
 PRODUCT_PACKAGES += \

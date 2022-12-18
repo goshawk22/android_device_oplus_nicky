@@ -1,4 +1,0 @@
-runtime_resource_overlay {
-    name: "FrameworksResTarget_RMX1971",
-    device_specific: true,
-}
