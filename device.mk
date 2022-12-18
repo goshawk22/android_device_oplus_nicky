@@ -263,7 +263,8 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor
 
 # NFC/Secure Element
-PRODUCT_PACKAGES += android.hardware.secure_element@1.2.vendor
+PRODUCT_PACKAGES += \
+    android.hardware.secure_element@1.2.vendor
 
 # OMX
 PRODUCT_PACKAGES += \
@@ -316,10 +317,6 @@ TARGET_COMMON_QTI_COMPONENTS := \
     vibrator \
     wfd
 
-# Recovery
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/unified_script.sh:install/bin/unified_script.sh
-
 # RIL
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
@@ -344,14 +341,6 @@ PRODUCT_SOONG_NAMESPACES += \
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti
-
-# Touch
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.oplus
-
-# Trust
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
 
 # Wi-Fi
 PRODUCT_PACKAGES += \

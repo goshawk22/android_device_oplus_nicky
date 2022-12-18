@@ -41,21 +41,6 @@ void vendor_load_properties() {
                 OverrideProperty("ro.product.product.model", "RMX1851");
             }
             break;            
-        case 19601:
-            {
-                OverrideProperty("ro.product.product.model", "RMX1901CN");
-            }
-            break;
-        case 19605:
-            {
-                OverrideProperty("ro.product.product.model", "RMX1901");
-            }
-            break;
-        case 19651:
-            {
-                OverrideProperty("ro.product.product.model", "RMX1921");
-            }
-            break;
         case 19691:
             {
                 OverrideProperty("ro.product.product.model", "RMX1971");
