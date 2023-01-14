@@ -24,3 +24,6 @@ allow init vendor_proc_display:file { write open };
 set_prop(init, vendor_power_prop);
 allow init init:capability2 { mac_admin };
 allow init sysfs:file { write open };
+allow init ion_device:chr_file { ioctl open read };
+allow init vendor_file:file { execute execute_no_trans };
+allow init xdsp_device:chr_file { ioctl open read };

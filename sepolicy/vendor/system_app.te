@@ -4,3 +4,6 @@ allow system_app zygote:unix_stream_socket getopt;
 allow system_app vendor_proc_display:dir { search };
 binder_call(system_app, hal_power_default);
 allow system_app unlabeled:file { read };
+allow system_app proc_vmallocinfo:file { read open getattr };
+allow system_app sysfs_zram:file { read open getattr };
+allow system_app vendor_default_prop:file { getattr open };

@@ -1,2 +1,2 @@
 allow adsprpcd proc:file { getattr open read };
-allow adsprpcd sysfs:file read;
+allow adsprpcd sysfs:file { read open getattr };

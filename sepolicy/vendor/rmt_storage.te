@@ -2,5 +2,5 @@ allow rmt_storage proc:file { open read };
 allow rmt_storage sysfs:file { getattr open read };
 allow rmt_storage system_prop:file { getattr open read };
 allow rmt_storage emmc_block_device:blk_file { read write open };
-allow rmt_storage default_prop:file { read open };
-allow rmt_storage block_device:blk_file { read write };
+allow rmt_storage default_prop:file { read open getattr };
+allow rmt_storage block_device:blk_file { read write open };

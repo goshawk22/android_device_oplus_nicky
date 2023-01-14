@@ -19,3 +19,5 @@ allow qti_init_shell vendor_camera_data_file:dir { getattr open read add_name cr
 allow qti_init_shell vfat:dir search;
 allow qti_init_shell sysfs:file { write } ;
 set_prop(qti_init_shell, vendor_unification_prop);
+
+allow qti_init_shell proc_watermark_scale_factor:file { write open };
